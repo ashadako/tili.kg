@@ -8,6 +8,7 @@ $app = new Silex\Application();
 $app['debug'] = true;
 
 
+
 $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 $app['autoloader']->registerNamespace('SilexExtension', __DIR__ . '/lib/silex-extension/src');
 $app['autoloader']->registerNamespace('Entea', __DIR__ . '/lib/');
